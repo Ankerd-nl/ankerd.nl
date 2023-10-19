@@ -2,12 +2,14 @@
     <!-- Primary Navigation Menu -->
     <div class="navbar bg-base-100">
         <div class="flex-1">
-            <x-application-logo class="btn btn-ghost" />
+            <a href="{{ url('/') }}">
+                <x-application-logo class="btn"/>
+            </a>
             <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-nav-link>
         </div>
-        <div class="flex-none">
+        <div class="flex-1">
             @if (Auth::check())
                 <div>{{ Auth::user()->name }}</div>
                 <div class="dropdown-end dropdown">

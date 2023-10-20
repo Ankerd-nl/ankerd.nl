@@ -497,6 +497,15 @@ body {
         text-decoration: none !important;
     }
 
+    .homeparalax {
+        background-size: cover;
+        background-position: center; /* Optionally, you can use this to control the position of the image. */
+        background-repeat: no-repeat; /* This prevents the image from repeating. */
+        height: 900px;
+        background-image: url('pictures/DSCN4579.JPG');
+    }
+
+
     .imgblog {
         width: 90%;
         height: auto;
@@ -701,6 +710,13 @@ body {
         width: 30%;
         height: 15%;
         text-decoration: none;
+    }
+
+    .homeparalax {
+        background-size: cover;
+        background-position: center; /* Optionally, you can use this to control the position of the image. */
+        background-repeat: no-repeat; /* This prevents the image from repeating. */
+        height: 900px;
     }
 
     .imgblog {

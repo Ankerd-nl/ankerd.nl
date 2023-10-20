@@ -1,24 +1,24 @@
-<nav x-data="{ open: false }" class="border-b sticky top-0 border-gray-100 bg-white dark:border-gray-700 dark:bg-gray-800">
+<nav x-data="{ open: false }" class="sticky top-0 border-b border-gray-100 bg-white dark:border-gray-700 dark:bg-gray-800">
     <!-- Primary Navigation Menu -->
     <div class="navbar flex bg-base-100">
-        <div class="w-1/3 flex-1 justify-center">
+        <div class="w-1/3 flex-1 justify-start">
             <a href="{{ url('/') }}">
-                <x-application-logo class="btn avatar" />
+                <img src="images/ankerdlogotext2023.png" class="h-auto w-40" alt="Ankerd Logo Text">
             </a>
-            <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                {{ __('Dashboard') }}
-            </x-nav-link>
-            <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                {{ __('Dashboard') }}
-            </x-nav-link>
-            <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                {{ __('Dashboard') }}
-            </x-nav-link>
         </div>
         <div class="w-1/3 flex-1 justify-center">
 
         </div>
-        <div class="w-1/3 flex-1 justify-center">
+        <div class="w-1/3 flex-1 justify-end">
+            <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                {{ __('Blog') }}
+            </x-nav-link>
+            <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                {{ __('Portfolio') }}
+            </x-nav-link>
+            <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                {{ __('Contact') }}
+            </x-nav-link>
             @if (Auth::check())
                 <div>{{ Auth::user()->name }}</div>
                 <div class="dropdown-end dropdown">

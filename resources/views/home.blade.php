@@ -1,5 +1,5 @@
 <x-app-layout>
-    <section class="bluebox" style="height: 900px;">
+    <section class="homeparalax" style="background-image: url('pictures/DSCN4579.JPG')">
 
     </section>
 

@@ -3,13 +3,13 @@
 
     </section>
 
-    <section class="mx-96 my-10 flex flex-row justify-center"">
+    <section class="mx-96 my-10 flex flex-row justify-center">
         <div class="text-left">
             <header100>
                 Convention videos
             </header100>
             <p>
-                We make videos here at ankerd about anime conventions in the Netherlands. We don't really make random
+                We make videos here at Ankerd about anime conventions in the Netherlands. We don't really make random
                 vlogs, just some goofy videos about conventions.
             </p>
             <p class="mt-4">
@@ -43,12 +43,12 @@
                     About
                 </header100>
                 <p>
-                    Ankerd was founded by gavin132_ back in December of 2021. I actually just wanted a proper domain name
+                    Ankerd was founded by gavin132_ back in December of 2021. I actually just wanted a proper domain name,
                     so I could make websites However This website is still just one giant hobby project hosted and maintained by me,
                     which quickly grew to a pretty sizeable community. I don't really know what to do
                     with this website, for now I have my portfolio on here. I also have a few teeny tiny articles littered
-                    across this site dating back to my high school days. Keep in mind that site will change a whole bunch
-                    during it's development. This project will never be over.
+                    across this site dating back to my high school days. Keep in mind that site will change a bunch
+                    during its development. This project will never be over.
                 </p>
             </div>
         </div>

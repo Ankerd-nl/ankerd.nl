@@ -1,4 +1,5 @@
-<nav x-data="{ open: false }" class="sticky top-0 border-b border-gray-100 bg-white dark:border-gray-700 dark:bg-gray-800">
+<nav x-data="{ open: false }"
+     class="sticky top-0 border-b border-gray-100 bg-white dark:border-gray-700 dark:bg-gray-800">
     <!-- Primary Navigation Menu -->
     <div class="navbar flex bg-base-100">
         <div class="w-1/3 flex-1 justify-start">
@@ -19,15 +20,17 @@
             <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Contact') }}
             </x-nav-link>
+
             @if (Auth::check())
                 <div>{{ Auth::user()->name }}</div>
                 <div class="dropdown-end dropdown">
                     <label tabindex="0" class="avatar btn btn-circle btn-ghost">
                         <div class="w-10 rounded-full">
-                            <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" />
+                            <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200"/>
                         </div>
                     </label>
-                    <ul tabindex="0" class="menu dropdown-content rounded-box menu-sm z-[1] mt-3 w-52 bg-base-100 p-2 shadow">
+                    <ul tabindex="0"
+                        class="menu dropdown-content rounded-box menu-sm z-[1] mt-3 w-52 bg-base-100 p-2 shadow">
                         <li>
                             <x-dropdown-link :href="route('profile.edit')">
                                 {{ __('Profile') }}
@@ -43,10 +46,13 @@
                     </ul>
                 </div>
             @else
-                <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 focus:rounded-sm focus:outline focus:outline-2 focus:outline-red-500 dark:text-gray-400 dark:hover:text-white">Log in</a>
-
+                <x-nav-link href="{{ route('login') }}">
+                    Log in
+                </x-nav-link>
                 @if (Route::has('register'))
-                    <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 focus:rounded-sm focus:outline focus:outline-2 focus:outline-red-500 dark:text-gray-400 dark:hover:text-white">Register</a>
+                    <x-nav-link href="{{ route('register') }}">
+                        Register
+                    </x-nav-link>
                 @endif
             @endif
 
